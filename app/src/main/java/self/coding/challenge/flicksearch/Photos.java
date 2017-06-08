@@ -1,25 +1,63 @@
 package self.coding.challenge.flicksearch;
 
-/**
- * Created by Subin on 3/10/2016.
- */
-public class Photos {
-    private Photo photos;
-    private String stat;
+import java.util.List;
 
-    public Photo getPhotos() {
+/**
+ * Photo class .. Needed for GSON parsing
+ */
+class Photos {
+    private Photo photos;
+
+    /**
+     * Getter for Photo within the Photos class
+     *
+     * @return Photo object
+     */
+    Photo getPhotos() {
         return photos;
     }
+}
 
-    public void setPhotos(Photo photos) {
-        this.photos = photos;
+/**
+ * Photo class .. Needed for GSON parsing
+ */
+class Photo {
+    private List<IndivPhoto> photo;
+
+    /**
+     * Getter for List of IndivPhoto
+     *
+     * @return list of IndivPhoto
+     */
+    List<IndivPhoto> getPhoto() {
+        return photo;
+    }
+}
+
+/**
+ * IndivPhoto class .. Needed for GSON parsing
+ */
+class IndivPhoto {
+
+    private String title;
+    private String url_z;
+
+    /**
+     * Getter for image title
+     *
+     * @return title of the image
+     */
+    public String getTitle() {
+        return title;
     }
 
-    public String getStat() {
-        return stat;
+    /**
+     * Getter for image url
+     *
+     * @return url for the image
+     */
+    String getUrl_z() {
+        return url_z;
     }
 
-    public void setStat(String stat) {
-        this.stat = stat;
-    }
 }
