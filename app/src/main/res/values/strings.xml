@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">FlickSearch</string>
+    <string name="str_network_broadcast_receiver_label">NetworkBroadCastReceiver</string>
+    <string name="str_internet_unavailable">Internet connection is not available</string>
+
+    <string name="flickr_api_key">16611eaa294697f13aa4034235b24d22</string>
 </resources>
